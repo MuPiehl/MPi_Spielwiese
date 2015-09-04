@@ -1,38 +1,15 @@
 package de.hypoport.omc;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
-/**
- * Unit test for simple App.
- */
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+@Test
 public class AppTest 
-    extends TestCase
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
+    public void testLoadBase64FromFile()
     {
-        super( testName );
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+        System.out.println("MPi-Todo Dummy weg dafür echter Test");
+        Assert.assertTrue( true ); // MPi-Todo Dummy weg dafür echter Test
     }
 }
