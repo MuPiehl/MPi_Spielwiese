@@ -26,7 +26,7 @@ public class AppTest {
         Assert.assertEquals(decodeResult, "abcd");
     }
 
-    public void testDecodeAndWriteZipfile(){
+    public void testDecodeAndWriteZipfile() {
         // todo lösche file (fals vorhanden)
         String base64Txt = TextfileLoader.loadAngebotsBase64();
 

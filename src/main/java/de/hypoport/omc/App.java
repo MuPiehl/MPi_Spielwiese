@@ -16,7 +16,7 @@ public class App {
     private static Logger log = LoggerFactory.getLogger(de.hypoport.omc.App.class);
 
     public static void main(String[] args) {
-        log.info("Hello World!");
+        log.info("Hallo Elen!!");
     }
 
     public void decodeAndWriteZipfile(String base64Data, String filename) {
