@@ -1,0 +1,113 @@
+{
+    "jsonVersion": 28,
+    "de.hypoport.efi.offerengine.offerworkflow.dsl.internal.konditionsangebot.DslKonditionsAngebotDto": {
+        "finanzierung": {
+            "@class": "de.hypoport.efi.productengine.dsl.anfrage.DslFinanzierungsSpezifikationDto",
+            "bausteinSpezifikationen": {
+                "@class": "de.hypoport.efi.infrastructure.ListContainer",
+                "de.hypoport.efi.productengine.dsl.anfrage.DslAnnuitaetendarlehensSpezifikationDto": {
+                    "darlehensBetrag": 231000,
+                    "anfaenglicherTilgungsSatz": "2.0000%",
+                    "anfaenglicheMindestTilgung": "1.5%",
+                    "tilgungsErsatzProdukte": {
+                        "@class": "de.hypoport.efi.infrastructure.ListContainer"
+                    },
+                    "tilgungsAusgesetzt": false,
+                    "tilgungsErsatzLeistungJaehrlich": "0E+2%",
+                    "identifier": 16703517,
+                    "tilgungsbeginn": "2015-10-31",
+                    "auszahlungsDatum": "2015-09-30",
+                    "disagio": "0.0000%",
+                    "bereitstellungsZinsfreieZeitInMonaten": 12,
+                    "bereitstellungsZinsAb": "2016-09-04",
+                    "bereitstellungsZins": "3%",
+                    "zahlungsintervall": "MONATLICH",
+                    "produktBezeichnung": "DSL-Annuitätendarlehen",
+                    "einstandsVorgabe": "2015-09-01T23:59:00.000",
+                    "angebotsZeitpunktVorgabe": "2015-09-04T15:20:44.544",
+                    "europaceMarge": "0.01%",
+                    "vertriebsGruppe": {
+                        "@class": "de.hypoport.efi.productengine.dsl.anfrage.DslVertriebsGruppeDto",
+                        "name": "keine",
+                        "id": "KEINE"
+                    },
+                    "effektivZinsRelevanteZusatzkosten": 0,
+                    "reservierbarerZins": "1.98%",
+                    "gesamtProvision": "1.100000000000%",
+                    "sondertilgungSatz": "5.0000%",
+                    "vollstaendigeTilgung": false,
+                    "zinsbindungInMonaten": 120
+                },
+                "de.hypoport.efi.productengine.dsl.anfrage.DslPrivatdarlehenSpezifikationDto": {
+                    "darlehensBetrag": 44000,
+                    "anfaenglicherTilgungsSatz": "1.5%",
+                    "anfaenglicheMindestTilgung": "1.5%",
+                    "tilgungsErsatzProdukte": {
+                        "@class": "de.hypoport.efi.infrastructure.ListContainer"
+                    },
+                    "tilgungsAusgesetzt": false,
+                    "tilgungsErsatzLeistungJaehrlich": "0E+2%",
+                    "identifier": 16703518,
+                    "tilgungsbeginn": "2015-10-31",
+                    "auszahlungsDatum": "2015-09-30",
+                    "disagio": "0E+2%",
+                    "bereitstellungsZinsfreieZeitInMonaten": 6,
+                    "bereitstellungsZinsAb": "2016-03-04",
+                    "bereitstellungsZins": "3%",
+                    "zahlungsintervall": "MONATLICH",
+                    "produktBezeichnung": "DSL-Privatdarlehen",
+                    "einstandsVorgabe": "2015-09-04T15:20:44.544",
+                    "angebotsZeitpunktVorgabe": "2015-09-04T15:20:44.544",
+                    "europaceMarge": "0.05%",
+                    "vertriebsGruppe": {
+                        "@class": "de.hypoport.efi.productengine.dsl.anfrage.DslVertriebsGruppeDto",
+                        "name": "keine",
+                        "id": "KEINE"
+                    },
+                    "effektivZinsRelevanteZusatzkosten": 0,
+                    "reservierbarerZins": "4.70%",
+                    "gesamtProvision": "1.5%",
+                    "laufzeitInMonaten": 180
+                }
+            },
+            "finanzierungsArt": "NEUFINANZIERUNG",
+            "sollProvisionOptimiertWerden": true,
+            "beratungsHonorar": 0,
+            "bausparserviceSteuerung": "TILGUNGSERSATZ",
+            "vertriebsGruppe": {
+                "@class": "de.hypoport.efi.productengine.dsl.anfrage.DslVertriebsGruppeDto",
+                "name": "keine",
+                "id": "KEINE"
+            },
+            "bausparVertriebsGruppe": "",
+            "identifier": 7776120
+        },
+        "darlehensProvisionen": {
+            "@class": "de.hypoport.efi.offerengine.provision.DarlehensProvisionenDto"
+        },
+        "bindefrist": "2015-09-08T23:59:59.000",
+        "anpassungsMeldungen": {
+            "@class": "de.hypoport.efi.domainsupport.meldung.MeldungenDto",
+            "delegate": [
+                {
+                    "@class": "linked-hash-set",
+                    "de.hypoport.efi.domainsupport.meldung.Meldung": {
+                        "kategorie": "ANPASSUNG_VERTRIEBSWUNSCH",
+                        "code": "pe.dsl.machbarkeit.provision.anpassung",
+                        "referenzen": {
+                            "de.hypoport.efi.domainsupport.nls.GermanNomenDto": {
+                                "nomen": "DSL-Privatdarlehen",
+                                "genus": "NEUTRUM",
+                                "suffix": " über 44.000,00 €"
+                            }
+                        },
+                        "sichtbarkeit": "OHNE_EINSCHRAENKUNG",
+                        "externeMeldung": false
+                    }
+                }
+            ]
+        },
+        "bausparAngebote": {
+            "@class": "de.hypoport.efi.infrastructure.ListContainer"
+        }
+    }}
